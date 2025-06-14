@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supercines - Memotest: Cómo Entrenar a tu Dragón</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Pantalla de Bienvenida -->
+        <div id="start-screen" class="screen active">
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Supercines Logo" class="logo">
+            </div>
+            <h1>Poné a prueba tu memoria con los dragones de Berk</h1>
+            <p class="subtitle">Hacé match con las cartas iguales lo más rápido posible y demostrá tu concentración.</p>
+            <button id="start-button" class="btn">¡Jugar ahora! 🐉</button>
+        </div>
+
+        <!-- Pantalla del Juego -->
+        <div id="game-screen" class="screen">
+            <div class="game-header">
+                <div class="instructions">
+                    <p>Da vuelta dos cartas por turno. Intentá recordar la posición de cada personaje. ¡Hacé todos los matches para ganar!</p>
+                </div>
+                <div class="timer-container">
+                    <div class="timer">Tiempo: <span id="time">45</span>s</div>
+                </div>
+            </div>
+            <div id="game-board" class="game-board">
+                <!-- Las cartas se generarán dinámicamente con JavaScript -->
+            </div>
+        </div>
+
+        <!-- Pantalla de Resultado -->
+        <div id="result-screen" class="screen">
+            <div class="result-container">
+                <div id="win-message" class="result-message">
+                    <h2>Lo lograste, jinete de dragones 🎉</h2>
+                    <p>Completaste el desafío en <span id="final-time">0</span> segundos.</p>
+                    <p>¡Ganaste un 2x1 en entradas de cine para ver "Cómo entrenar a tu dragón"!</p>
+                    <p class="validity">Válido hasta el lunes 30 de junio de 2025</p>
+                </div>
+                <div id="lose-message" class="result-message">
+                    <h2>Seguí entrenando, futuro jinete...</h2>
+                    <p>¡No te rindas, los dragones creen en vos!</p>
+                </div>
+                <div class="button-container">
+                    <button id="restart-button" class="btn">Volver a jugar 🔁</button>
+                    <button id="home-button" class="btn">Pantalla de inicio ⬅️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
